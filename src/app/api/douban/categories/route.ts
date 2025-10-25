@@ -36,6 +36,7 @@ async function fetchDoubanData(
       Accept: 'application/json, text/plain, */*',
       Origin: 'https://movie.douban.com',
     },
+     next: { revalidate: 7200 }
   };
 
   try {
